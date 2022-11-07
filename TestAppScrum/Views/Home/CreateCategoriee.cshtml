@@ -1,0 +1,32 @@
+﻿@model Models.Models.Categorieen
+
+@{
+    ViewData["Title"] = "CreateCategoriee";
+}
+
+<h4>CreateCategoriee</h4>
+
+<h5>Categorieen</h5>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateCategoriee">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Naam" class="control-label"></label>
+                <input asp-for="Naam" class="form-control" />
+                <span asp-validation-for="Naam" class="text-danger"></span>
+            </div>
+            
+            
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a  asp-action="Categorieen">Back to List</a>
+</div>
+

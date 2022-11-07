@@ -1,0 +1,26 @@
+﻿@model ArtikelDetailViewModel
+@{
+    ViewData["Title"] = "DetailArtikel";
+}
+<h4>DetailArtikel</h4>
+<table>
+    <tr>
+        <td>
+            <li class="list-group-item bg-light"><b class="float-start">Id:</b><span class="float-end">@Model.ArtikelId</span></li>
+            <li class="list-group-item bg-light"><b class="float-start">EAN: </b><span class="float-end">@Model.Ean</span></li>
+            <li class="list-group-item bg-light"><b class="float-start">Naam: </b><span class="float-end">@Model.Naam</span></li>
+            <li class="list-group-item bg-light"><b class="float-start me-5">Beschrijving: </b><p class="float-end w-50 text-end">@Model.Beschrijving</p></li>
+            <li class="list-group-item bg-light"><b class="float-start">Prijs: </b><span class="float-end">@Html.DisplayFor(m => Model.Prijs)</span></li>
+            <li class="list-group-item bg-light"><b class="float-start">Gewicht: </b><span class="float-end">@Html.DisplayFor(m => Model.GewichtInGram)</span></li>
+            <li class="list-group-item bg-light"><b class="float-start">Bestelpeil: </b><span class="float-end">@Model.Bestelpeil</span></li>
+            <li class="list-group-item bg-light "><b class="float-start">Voorraad: </b><span class="float-end">@Model.Voorraad</span></li>
+            <li class="list-group-item bg-light"><b class="float-start">Mimimum voorraad: </b><span class="float-end">@Model.MinimumVoorraad</span></li>
+            <li class="list-group-item bg-light"><b class="float-start">Maximum voorraad: </b><span class="float-end">@Model.MaximumVoorraad</span></li>
+            <li class="list-group-item bg-light"><b class="float-start">Levertijd: </b><span class="float-end">@Model.Levertijd</span></li>
+            <li class="list-group-item bg-light"><b class="float-start">Aantal besteld bij leverancier: </b><span class="float-end">@Model.AantalBesteldLeverancier</span></li>
+            <li class="list-group-item bg-light"><b class="float-start me-5">Maximum aantal op magazijnplaats: </b><span class="float-end">@Model.MaxAantalInMagazijnPlaats</span></li>
+
+
+        </td>
+    </tr>
+</table>
